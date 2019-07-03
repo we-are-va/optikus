@@ -19,8 +19,8 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 .section {
-    border: solid 2vh #ec2b94;
-    min-height: 96vh;
+    border: solid 1vh #ec2b94;
+    min-height: 98vh;
    /* background-image: url('../img/shutterstock_557239318.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,9 +34,12 @@ h1,h2,h3 {
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
+    color: #333;
+}
+.logo {
+  margin-bottom: 1em;
 }
 .main {
-
     text-align: center;
     background: white;
     max-width: 900px;
@@ -48,24 +51,41 @@ h1,h2,h3 {
     flex-wrap: wrap;
     width: 100%;
 }
-p {
-    margin: 0 0 0.2em;
-}
 .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 2em 1em;
+  }
+    .main {
+        display: block;
+        padding: 1em 0;
+    }
+    .column {
+      display: block;
+    }
+}
+p {
+    margin: 0 0 0.5em;
+}
+a {
+  color: #333;
+}
+
 
 .btn {
     display: inline;
     background: #ec2b94;
     color: white;
-    padding: 0.5em;
+    padding: 0.7em 2em;
     text-transform: uppercase;
     border: none;
     text-decoration: none;
+    border-radius: 20px;
 }
 /*
  * Remove text-shadow in selection highlight:
